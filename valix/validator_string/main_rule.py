@@ -1,4 +1,4 @@
-from main.string_validator.rules import (
+from valix.validator_string.rules import (
     EndsWithRule,
     IncludesRule,
     LengthRule,

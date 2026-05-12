@@ -1,12 +1,12 @@
 from typing import cast
 
-from main.shared.types import (
+from valix.shared.types import (
     SafeParseErrorResult,
     SafeParseResult,
     SafeParseSuccessResult,
 )
-from main.validator_number.main_rule import Rule
-from main.validator_number.rules import (
+from valix.validator_number.main_rule import Rule
+from valix.validator_number.rules import (
     GTEqRule,
     GTRule,
     LTEqRule,
@@ -17,7 +17,7 @@ from main.validator_number.rules import (
     NumberTypeRule,
     PositiveRule,
 )
-from main.validator_number.validate import ValidateNumber
+from valix.validator_number.validate import ValidateNumber
 
 
 def parse_number_rules(data: object, rules: list[Rule]) -> SafeParseResult[int | float]:

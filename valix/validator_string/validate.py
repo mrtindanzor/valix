@@ -1,7 +1,7 @@
 from typing import TypeVar
 
-from main.shared.types import SafeParseErrorResult
-from main.string_validator.rules import (
+from valix.shared.types import SafeParseErrorResult
+from valix.validator_string.rules import (
     EndsWithRule,
     IncludesRule,
     LengthRule,

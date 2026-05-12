@@ -1,4 +1,4 @@
-from main.validator_number.rules import (
+from valix.validator_number.rules import (
     GTEqRule,
     GTRule,
     LTEqRule,

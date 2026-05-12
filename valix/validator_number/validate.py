@@ -1,5 +1,5 @@
-from main.shared.types import SafeParseErrorResult
-from main.validator_number.rules import (
+from valix.shared.types import SafeParseErrorResult
+from valix.validator_number.rules import (
     GTEqRule,
     GTRule,
     LTEqRule,

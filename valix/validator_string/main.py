@@ -1,8 +1,8 @@
-from main.shared.errors import ValixError
-from main.shared.types import SafeParseResult
-from main.string_validator.main_rule import Rule, add_to_rules
-from main.string_validator.parse import parse_rules
-from main.string_validator.rules import (
+from valix.shared.errors import ValixError
+from valix.shared.types import SafeParseResult
+from valix.validator_string.main_rule import Rule, add_to_rules
+from valix.validator_string.parse import parse_rules
+from valix.validator_string.rules import (
     EndsWithRule,
     IncludesRule,
     LengthRule,

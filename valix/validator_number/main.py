@@ -1,10 +1,10 @@
 # pyrefly: ignore [missing-import]
 
-from main.shared.errors import ValixError
-from main.shared.types import SafeParseResult
-from main.validator_number.main_rule import Rule, add_to_rules
-from main.validator_number.parse import parse_number_rules
-from main.validator_number.rules import (
+from valix.shared.errors import ValixError
+from valix.shared.types import SafeParseResult
+from valix.validator_number.main_rule import Rule, add_to_rules
+from valix.validator_number.parse import parse_number_rules
+from valix.validator_number.rules import (
     GTEqRule,
     GTRule,
     LTEqRule,

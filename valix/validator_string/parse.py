@@ -1,12 +1,12 @@
 from typing import cast
 
-from main.shared.types import (
+from valix.shared.types import (
     SafeParseErrorResult,
     SafeParseResult,
     SafeParseSuccessResult,
 )
-from main.string_validator.main_rule import Rule
-from main.string_validator.rules import (
+from valix.validator_string.main_rule import Rule
+from valix.validator_string.rules import (
     EndsWithRule,
     IncludesRule,
     LengthRule,
@@ -17,7 +17,7 @@ from main.string_validator.rules import (
     StringTypeRule,
     UpperRule,
 )
-from main.string_validator.validate import ValidateString
+from valix.validator_string.validate import ValidateString
 
 
 def parse_rules(input_data: object, rules: list[Rule]) -> SafeParseResult[str]:

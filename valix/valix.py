@@ -1,12 +1,11 @@
 from typing import TypeGuard
-
-from main.shared.types import (
+from valix.shared.types import (
     SafeParseErrorResult,
     SafeParseResult,
     SafeParseSuccessResult,
-)
-from main.string_validator.main import StringValidator
-from main.validator_number.main import NumberValidator
+) 
+from valix.validator_string.main import StringValidator
+from valix.validator_number.main import NumberValidator
 
 
 class Valix:
