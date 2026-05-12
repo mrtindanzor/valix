@@ -1,3 +1,4 @@
+from dataclasses import dataclass
 from typing import Literal, TypedDict, TypeVar, Union
 
 
@@ -8,19 +9,19 @@ class Options(TypedDict):
 Rule = tuple[str, int | str, Options]
 
 
-class SafeParseErrorResult(TypedDict):
-    success: Literal[False]
+@dataclass
+class SafeParseErrorResult:
     error: str
+    success: Literal[False] = False
 
 
 T = TypeVar("T")
 
 
-class SafeParseSuccessResult[T](TypedDict):
-    success: Literal[True]
+@dataclass
+class SafeParseSuccessResult[T]:
     data: T
+    success: Literal[True] = True
 
-SafeParseResult  = Union[
-    SafeParseErrorResult,
-    SafeParseSuccessResult[T]
-]
+
+SafeParseResult = Union[SafeParseErrorResult, SafeParseSuccessResult[T]]
