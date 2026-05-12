@@ -1,3 +1,5 @@
+name: tests
+
 on:
   pull_request:
     branches:
@@ -21,4 +23,6 @@ jobs:
           python -m pip install -r requirements.txt
 
       - name: Run tests
-        run: pytest
+        run: |
+          $env:PYTHONPATH = "."
+          pytest
